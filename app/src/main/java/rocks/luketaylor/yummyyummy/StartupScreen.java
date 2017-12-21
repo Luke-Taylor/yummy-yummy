@@ -3,8 +3,15 @@ package rocks.luketaylor.yummyyummy;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class StartupScreen extends Activity {
 
@@ -19,9 +26,9 @@ public class StartupScreen extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-               Intent intent = new Intent(getApplicationContext(), FoodSelection.class);
-               startActivity(intent);
-               finish();
+                Intent intent = new Intent(getApplicationContext(), FoodSelection.class);
+                startActivity(intent);
+                finish();
             }
         }, 2000);
     }

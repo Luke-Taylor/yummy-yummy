@@ -18,11 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodSelection"
-            android:theme="@style/MainTheme"
-            android:label="@string/title_activity_choose_food">
-
-        </activity>
+        <activity
+            android:name=".FoodSelection"
+            android:label="@string/title_activity_choose_food"
+            android:theme="@style/MainTheme"></activity>
+        <activity android:name=".ViewBasket"></activity>
     </application>
 
 </manifest>

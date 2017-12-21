@@ -7,6 +7,8 @@
 
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_choose_food">Food</string>
+    <string name="title_activity_basked">Basket</string>
 
     <string name="titleChoosingFood">Choose Your Food:</string>
+    <string name="titleViewBasket">Your Basket:</string>
 </resources>

@@ -57,7 +57,8 @@
                 android:theme="@style/ButtonNormal"
                 android:layout_centerInParent="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:id = "@+id/placeholderButton"/>
         </RelativeLayout>
 
 
