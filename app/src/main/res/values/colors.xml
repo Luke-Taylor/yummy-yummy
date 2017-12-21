@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorMainBackground">#582b01</color>
+    <color name="colorMainHighlight">#e3b53c</color>
+    <color name="colorMainText">#f2f2f2</color>
+
+    <color name="colorInverseBackground">#e3b53c</color>
+    <color name="colorInverseText">#582b01</color>
+    <color name="colorInverseHighlight">#582b01</color>
+</resources>
