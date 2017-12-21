@@ -1,3 +1,12 @@
 <resources>
     <string name="appName">yummy yummy</string>
+
+    <string name="placeholder">Placeholder Text</string>
+
+    <string name="orderFood">Add To Basket</string>
+
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_activity_choose_food">Food</string>
+
+    <string name="titleChoosingFood">Choose Your Food:</string>
 </resources>

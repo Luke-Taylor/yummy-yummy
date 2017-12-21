@@ -8,13 +8,20 @@
         android:label="@string/appName"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/StartupTheme">
-        <activity android:name=".StartupScreen">
+        android:theme="@style/MainTheme">
+        <activity
+            android:name=".StartupScreen"
+            android:theme="@style/StartupTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".FoodSelection"
+            android:theme="@style/MainTheme"
+            android:label="@string/title_activity_choose_food">
+
         </activity>
     </application>
 

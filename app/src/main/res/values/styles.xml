@@ -4,7 +4,7 @@
     <style name="MainTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:typeface">monospace</item>
 
-        <item name="android:background">@color/colorMainBackground</item>
+        <item name="android:windowBackground">@color/colorMainBackground</item>
 
         <item name="android:colorPrimary">@color/colorMainBackground</item>
         <item name="android:colorPrimaryDark">@color/colorMainBackground</item>
@@ -13,18 +13,29 @@
         <item name="android:textColor">@color/colorMainText</item>
         <item name="android:textColorPrimary">@color/colorMainText</item>
         <item name="android:textColorHighlight">@color/colorMainHighlight</item>
+
+        <item name="android:actionBarStyle">@style/MainActionBar</item>
     </style>
 
     <style name="InverseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="android:typeface">monospace</item>
         <item name="android:textColorPrimaryInverse">@color/colorInverseText</item>
         <item name="android:background">@color/colorInverseBackground</item>
+        <item name="android:actionBarStyle">@style/InverseActionBar</item>
     </style>
 
     <style name="StartupTheme" parent="android:Theme.Holo.Light.NoActionBar">
         <item name="android:typeface">monospace</item>
         <item name="android:textColorPrimaryInverse">@color/colorInverseText</item>
         <item name="android:background">@color/colorInverseBackground</item>
+    </style>
+
+    <style name="MainActionBar" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/colorMainHighlight</item>
+    </style>
+
+    <style name="InverseActionBar" parent="android:Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/colorInverseHighlight</item>
     </style>
 
     <style name="TextTitle">
@@ -58,6 +69,18 @@
 
     <style name="TextNormalInverse" parent="TextNormal">
         <item name="android:textColor">@color/colorInverseText</item>
+    </style>
+
+    <style name="ButtonNormal" parent="TextNormalInverse">
+        <item name="android:background">@color/colorInverseBackground</item>
+    </style>
+
+    <style name="ButtonInverse" parent="TextNormal">
+        <item name="android:background">@color/colorMainBackground</item>
+    </style>
+
+    <style name="FoodPlaceholder" parent="ButtonNormal">
+        <item name="android:padding">10dp</item>
     </style>
 
 </resources>
