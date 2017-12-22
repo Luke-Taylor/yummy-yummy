@@ -1,20 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="rocks.luketaylor.yummyyummy.Delivery"
+    android:weightSum="4"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:theme="@style/TextTitle"
+        android:text="@string/titleDelivery"
+        android:layout_weight="1"/>
+<fragment
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+    android:layout_weight="1"
+     />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressLine1"
+            android:theme="@style/TextNormalInverse"
+            android:hint="@string/hintAddressLineOne"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:theme="@style/TextNormalInverse"
+            android:hint="@string/hintAddressCity"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/county"
+            android:theme="@style/TextNormalInverse"
+            android:hint="@string/hintAddressCounty"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postcode"
+            android:theme="@style/TextNormalInverse"
+            android:hint="@string/hintAddressPostcode"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/updateAddress"
+                android:onClick="updateMapFromAddress"/>
+        <!--android:theme="@style/ButtonNormal"-->
 
     </LinearLayout>
-</LinearLayout>
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:checkedButton="@id/chkDeliveryPage"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkBasketPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp"
+            android:onClick="viewBasket"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkDeliveryPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkPaymentPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp"
+            android:onClick="addPayment"/>
+    </RadioGroup>
+</LinearLayout>

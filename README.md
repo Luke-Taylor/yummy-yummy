@@ -12,8 +12,8 @@ App mock-up for a fake food delivery company, yummy yummy
 
 **Basket of selected food**
 
-Delivery screen
+**Delivery screen**
 
-Payment page
+**Payment page**
 
 Confirmation page

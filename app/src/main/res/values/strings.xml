@@ -7,13 +7,23 @@
     <string name="removeFood">Remove From Basket</string>
     <string name="emptyBasket">your basket is empty!</string>
 
+    <string name="updateAddress">Update Map</string>
+
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_choose_food">Food</string>
-    <string name="title_activity_basked">Basket</string>
+    <string name="title_activity_basket">Basket</string>
+    <string name="title_activity_delivery">Delivery</string>
 
     <string name="titleChoosingFood">Choose Your Food:</string>
     <string name="titleViewBasket">Your Basket:</string>
+    <string name="titleDelivery">Delivery Location:</string>
+    <string name="titlePayment">Almost Done!</string>
 
+    <string name="subtitlePayment">please pay for your food:</string>
 
-    <string name="api_key">AIzaSyBy3uWnLGy9MW0sf37FFpaiR1tErKatpII</string>
+    <string name="hintAddressLineOne">Address Line One</string>
+    <string name="hintAddressCity">City</string>
+    <string name="hintAddressCounty">County</string>
+    <string name="hintAddressPostcode">Postcode</string>
+
 </resources>

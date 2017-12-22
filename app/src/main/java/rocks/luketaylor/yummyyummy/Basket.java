@@ -9,6 +9,8 @@ import java.util.List;
 
 public class Basket {
     public ArrayList<String> Items;
+    public Double Cost = 0.0;
+    public String Address = "";
 
     public void AddItem(String item){
         Items.add(item);

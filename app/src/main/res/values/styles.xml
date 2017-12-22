@@ -44,6 +44,7 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textSize">44sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="TextSubtitle">
@@ -51,12 +52,14 @@
         <item name="android:textColor">@color/colorMainText</item>
         <item name="android:textSize">36sp</item>
         <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="TextNormal">
         <item name="android:typeface">monospace</item>
         <item name="android:textColor">@color/colorMainText</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="TextTitleInverse" parent="TextTitle">

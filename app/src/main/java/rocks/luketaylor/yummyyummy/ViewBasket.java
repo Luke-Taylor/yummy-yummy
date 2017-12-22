@@ -13,6 +13,8 @@ import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class ViewBasket extends Activity {
 
     @Override
@@ -61,6 +63,8 @@ public class ViewBasket extends Activity {
     }
 
     public void setDelivery(View v){
+        Basket b = Basket.getInstance();
+        b.Cost = (new Random().nextDouble()) * b.Items.size();
         Intent intent = new Intent(getApplicationContext(), Delivery.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);

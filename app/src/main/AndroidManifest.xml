@@ -16,7 +16,7 @@
         android:theme="@style/MainTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/api_key" />
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".StartupScreen"
@@ -29,10 +29,12 @@
         </activity>
         <activity
             android:name=".FoodSelection"
-            android:label="@string/title_activity_choose_food"
-            android:theme="@style/MainTheme" />
+            android:label="@string/title_activity_choose_food" />
         <activity android:name=".ViewBasket" />
-        <activity android:name=".Delivery"></activity>
+        <activity
+            android:name=".Delivery"
+            android:label="@string/title_activity_delivery" />
+        <activity android:name=".Payment"></activity>
     </application>
 
 </manifest>
