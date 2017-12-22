@@ -4,6 +4,8 @@
     <string name="placeholder">Placeholder Text</string>
 
     <string name="orderFood">Add To Basket</string>
+    <string name="removeFood">Remove From Basket</string>
+    <string name="emptyBasket">your basket is empty!</string>
 
     <string name="title_activity_navigation">Navigation</string>
     <string name="title_activity_choose_food">Food</string>
@@ -11,4 +13,7 @@
 
     <string name="titleChoosingFood">Choose Your Food:</string>
     <string name="titleViewBasket">Your Basket:</string>
+
+
+    <string name="api_key">AIzaSyBy3uWnLGy9MW0sf37FFpaiR1tErKatpII</string>
 </resources>

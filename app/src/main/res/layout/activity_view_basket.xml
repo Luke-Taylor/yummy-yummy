@@ -9,11 +9,13 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:theme="@style/TextTitle"
-        android:text="@string/titleViewBasket"/>
+        android:text="@string/titleViewBasket"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <LinearLayout
             android:id="@+id/basketContainer"
@@ -23,5 +25,35 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:checkedButton="@id/chkBasketPage"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="4.5">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkFoodPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp"
+            android:onClick="selectFood"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkBasketPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkDeliveryPage"
+            android:background="@drawable/checkbox"
+            android:layout_margin="5dp"
+            android:onClick="setDelivery"/>
+    </RadioGroup>
 
 </LinearLayout>

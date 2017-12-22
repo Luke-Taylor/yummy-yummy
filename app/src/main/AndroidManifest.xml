@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="rocks.luketaylor.yummyyummy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -9,6 +14,10 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/MainTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+
         <activity
             android:name=".StartupScreen"
             android:theme="@style/StartupTheme">
@@ -21,8 +30,9 @@
         <activity
             android:name=".FoodSelection"
             android:label="@string/title_activity_choose_food"
-            android:theme="@style/MainTheme"></activity>
-        <activity android:name=".ViewBasket"></activity>
+            android:theme="@style/MainTheme" />
+        <activity android:name=".ViewBasket" />
+        <activity android:name=".Delivery"></activity>
     </application>
 
 </manifest>

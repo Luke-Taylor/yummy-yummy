@@ -8,9 +8,9 @@ App mock-up for a fake food delivery company, yummy yummy
 
 **Startup Screen**
 
-Choosing food
+**Choosing food**
 
-Basket of selected food
+**Basket of selected food**
 
 Delivery screen
 

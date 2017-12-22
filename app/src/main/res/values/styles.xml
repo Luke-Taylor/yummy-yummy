@@ -47,7 +47,7 @@
     </style>
 
     <style name="TextSubtitle">
-        <!--<item name="android:typeface">monospace</item>-->
+        <item name="android:typeface">monospace</item>
         <item name="android:textColor">@color/colorMainText</item>
         <item name="android:textSize">36sp</item>
         <item name="android:textStyle">italic</item>

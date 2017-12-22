@@ -14,6 +14,15 @@ public class Basket {
         Items.add(item);
     }
 
+    public void RemoveItem(String item){
+        for(int i = 0; i < Items.size(); i ++){
+            if(Items.get(i) == item){
+                Items.remove(i);
+                break;
+            }
+        }
+    }
+
     private Basket(){
         Items = new ArrayList<>();
     }
