@@ -16,4 +16,4 @@ App mock-up for a fake food delivery company, yummy yummy
 
 **Payment page**
 
-Confirmation page
+**Confirmation page**
