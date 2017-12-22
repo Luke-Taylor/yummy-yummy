@@ -13,13 +13,17 @@
     <string name="title_activity_choose_food">Food</string>
     <string name="title_activity_basket">Basket</string>
     <string name="title_activity_delivery">Delivery</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_confirmation">@string/titleConfirmation</string>
 
     <string name="titleChoosingFood">Choose Your Food:</string>
     <string name="titleViewBasket">Your Basket:</string>
     <string name="titleDelivery">Delivery Location:</string>
     <string name="titlePayment">Almost Done!</string>
+    <string name="titleConfirmation">On It\'s Way!</string>
 
     <string name="subtitlePayment">please pay for your food:</string>
+    <string name="subtitleConfirmation">your order will be with you shortly!</string>
 
     <string name="hintAddressLineOne">Address Line One</string>
     <string name="hintAddressCity">City</string>

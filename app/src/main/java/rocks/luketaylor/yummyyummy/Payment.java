@@ -21,7 +21,7 @@ public class Payment extends Activity {
     }
 
     public void showConfirmation(View v){
-        Intent intent = new Intent(getApplicationContext(), Payment.class);
+        Intent intent = new Intent(getApplicationContext(), Confirmation.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_from_right,R.anim.slide_to_left);
         finish();

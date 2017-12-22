@@ -30,11 +30,15 @@
         <activity
             android:name=".FoodSelection"
             android:label="@string/title_activity_choose_food" />
-        <activity android:name=".ViewBasket" />
+        <activity android:name=".ViewBasket"
+            android:label="@string/title_activity_basket"/>
         <activity
             android:name=".Delivery"
             android:label="@string/title_activity_delivery" />
-        <activity android:name=".Payment"></activity>
+        <activity android:name=".Payment"
+            android:label="@string/title_activity_payment"/>
+        <activity android:name=".Confirmation"
+            android:label="@string/title_activity_confirmation"/>
     </application>
 
 </manifest>
